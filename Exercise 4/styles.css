@@ -1,0 +1,41 @@
+.effect {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+}
+
+.border {
+  box-shadow: 1px 1px 3px #333333;
+  border-radius: 10px;
+}
+
+.progressBar {
+  background-color: blue;
+  height: 20px;
+  transition: width ease-out 500ms
+}
+
+.highlight {
+  background-color: red;
+  width: 200px !important;
+}
+
+.blue {
+  background-color: rgb(0, 17, 255);
+  width: 200px !important;
+}
+
+.green {
+  background-color: green;
+  width: 200px !important;
+}
+
+.pink {
+  background-color: pink;
+  width: 200px !important;
+}
+
+.shrink {
+  background-color: gray;
+  width: 50px !important;
+}

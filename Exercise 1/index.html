@@ -1,0 +1,52 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>VueJS</title>
+    <link rel="stylesheet" href="">
+    <script src="../basics/vue.js"></script>
+    <!--
+        <script src="exercise1.js"></script>
+    -->
+</head>
+
+<body>
+
+    <div id="exercise">
+        <!-- 1) Fill the <p> below with your Name and Age - using Interpolation -->
+        <p>{{'Name:'+ name + ', Age:'+ age }}</p>
+        <!-- 2) Output your age, multiplied by 3 -->
+        <p>Age x 3:{{ age*3 }}</p>
+        <!-- 3) Call a function to output a random float between 0 and 1 (Math.random()) -->
+        <p>{{ random() }}</p>
+        <!-- 4) Search any image on Google and output it here by binding the "src" attribute -->
+        <div>
+            <img v-bind:src="img" style="width:100px;height:100px"/>
+        </div>
+        <!-- 5) Pre-Populate this input with your name (set the "value" attribute) -->
+        <div>
+            <input type="text" v-bind:value="name">
+        </div>
+    </div>
+</body>
+<script>
+new Vue({
+    el: '#exercise',
+    data: {
+        name: 'Danilo',
+        age: 36,
+        //img:'https://www.google.com/search?q=floresta+vermelha&rlz=1C1CHBD_pt-PTBR847BR847&tbm=isch&source=iu&ictx=1&fir=4-unPxYHNtllCM%253A%252CvDeG91AQRaQudM%252C_&vet=1&usg=AI4_-kSDJ1ij3zoJqoI2nh1xfXFhp3DTWw&sa=X&ved=2ahUKEwjTrN3XldLiAhWtJLkGHWj5CbEQ9QEwAnoECAAQCA#imgrc=4-unPxYHNtllCM:'
+        img:'C:/Users/supero/Pictures/milky-way.jpg'
+
+    },
+    methods: {
+        random: function () {
+            return Math.random();
+        }
+    }
+});
+
+</script>
+
+</html>

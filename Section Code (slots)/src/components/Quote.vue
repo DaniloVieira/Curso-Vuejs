@@ -2,10 +2,7 @@
     <div>
         <div class="title">
             <slot name="title"></slot>
-<<<<<<< HEAD
             <span><slot style="color: #ccc" name="subtitle"></slot>  The Subtitle </span>
-=======
->>>>>>> master
         </div>
         <hr>
         <div>
@@ -31,12 +28,9 @@ export default {
     h2 {
         color: red;
     }
-<<<<<<< HEAD
     .title {
         font-style: italic
     }
-=======
->>>>>>> master
 </style>
 
 

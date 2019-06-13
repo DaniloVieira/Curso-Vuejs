@@ -1,9 +1,15 @@
 import Vue from 'vue'
 import App from './App.vue'
 
-Vue.filter('to-lowercase', function(value) {
-   return value.toLowercase();
-});
+Vue.filter('to-lowercase', (value) => {
+  return value.toLowerCase();
+})
+
+Vue.mixin({
+  created() {
+    console.log('Global Mixin created() hook')
+  }
+})
 
 new Vue({
   el: '#app',
